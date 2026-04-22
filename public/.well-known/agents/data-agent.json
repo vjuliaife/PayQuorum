@@ -1,0 +1,30 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "PayQuorum Data Agent",
+  "description": "Fetches real-time financial data from AIsa APIs via x402 nanopayments. Optionally summarizes data using Featherless AI open-source LLMs",
+  "services": [
+    {
+      "name": "financial-data",
+      "endpoint": "/api/paid/stock-prices",
+      "version": "0.1.0",
+      "skills": ["data_fetch", "api_query", "x402_payment"]
+    },
+    {
+      "name": "company-news",
+      "endpoint": "/api/paid/company-news",
+      "version": "0.1.0"
+    },
+    {
+      "name": "financial-metrics",
+      "endpoint": "/api/paid/metrics",
+      "version": "0.1.0"
+    }
+  ],
+  "x402Support": true,
+  "active": true,
+  "supportedTrust": ["reputation"],
+  "models": {
+    "summarization": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "provider": "featherless.ai"
+  }
+}

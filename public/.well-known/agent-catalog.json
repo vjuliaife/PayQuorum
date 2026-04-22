@@ -1,0 +1,28 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#catalog-v1",
+  "name": "PayQuorum Agent Catalog",
+  "description": "Trustless agent task marketplace on Arc with Circle Nanopayments",
+  "network": "eip155:5042002",
+  "agents": [
+    {
+      "name": "Orchestrator",
+      "registration": "/.well-known/agents/orchestrator.json"
+    },
+    {
+      "name": "Data Agent",
+      "registration": "/.well-known/agents/data-agent.json"
+    },
+    {
+      "name": "Compute Agent",
+      "registration": "/.well-known/agents/compute-agent.json"
+    },
+    {
+      "name": "Validator",
+      "registration": "/.well-known/agents/validator.json"
+    },
+    {
+      "name": "Treasury",
+      "registration": "/.well-known/agents/treasury.json"
+    }
+  ]
+}

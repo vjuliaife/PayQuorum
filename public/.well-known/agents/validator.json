@@ -1,0 +1,21 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "PayQuorum Validator",
+  "description": "Verifies compute output quality using multi-criteria scoring (100-point scale). Triggers on-chain escrow release and reputation updates when output meets threshold",
+  "services": [
+    {
+      "name": "quality-validation",
+      "endpoint": "/api/agents",
+      "version": "0.1.0",
+      "skills": ["quality_check", "output_validation", "escrow_release"]
+    }
+  ],
+  "x402Support": true,
+  "active": true,
+  "supportedTrust": ["reputation", "validation"],
+  "contracts": {
+    "network": "eip155:5042002",
+    "escrow": "0xC79BE48Cf33bA378fD6826cBAEbBaC6f0D05c389",
+    "reputation": "0xfB225D66f7627F2e0a39A8F0D927253F6fF8A9CB"
+  }
+}

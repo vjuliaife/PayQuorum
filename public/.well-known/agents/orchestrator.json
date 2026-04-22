@@ -1,0 +1,21 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "PayQuorum Orchestrator",
+  "description": "Decomposes complex financial queries into subtasks, creates on-chain tasks with USDC bounties, and assigns work to specialized agents",
+  "services": [
+    {
+      "name": "task-creation",
+      "endpoint": "/api/demo/cycle",
+      "version": "0.1.0",
+      "skills": ["task_decomposition", "agent_selection", "usdc_escrow"]
+    }
+  ],
+  "x402Support": true,
+  "active": true,
+  "supportedTrust": ["reputation", "crypto-economic"],
+  "contracts": {
+    "network": "eip155:5042002",
+    "taskRegistry": "0x2Ec3180e23AC9C82205cb3Cd6885f2a27543E291",
+    "escrow": "0xC79BE48Cf33bA378fD6826cBAEbBaC6f0D05c389"
+  }
+}

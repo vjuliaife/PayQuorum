@@ -1,0 +1,20 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "PayQuorum Compute Agent",
+  "description": "Analyzes financial data using Google Gemini 2.5 Flash. Computes risk scores, trend analysis, and investment recommendations. Billed per compute unit via USDC nanopayments",
+  "services": [
+    {
+      "name": "financial-analysis",
+      "endpoint": "/api/agents",
+      "version": "0.1.0",
+      "skills": ["data_processing", "risk_scoring", "trend_analysis"]
+    }
+  ],
+  "x402Support": true,
+  "active": true,
+  "supportedTrust": ["reputation"],
+  "models": {
+    "analysis": "gemini-2.5-flash",
+    "provider": "google-deepmind"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "PayQuorum Treasury",
+  "description": "Monitors all agent spending against on-chain budget limits. Enforces daily caps and per-task maximums. Maintains full audit trail of system transactions",
+  "services": [
+    {
+      "name": "budget-enforcement",
+      "endpoint": "/api/budget",
+      "version": "0.1.0",
+      "skills": ["budget_monitoring", "spending_audit", "risk_management"]
+    }
+  ],
+  "x402Support": false,
+  "active": true,
+  "supportedTrust": ["reputation"],
+  "contracts": {
+    "network": "eip155:5042002",
+    "budgetController": "0x571eC845335B89985Be599dD6Bd40b77B072C455"
+  }
+}
