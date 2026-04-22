@@ -174,7 +174,8 @@ sequenceDiagram
 
 ```bash
 # 1. Clone and install
-cd payquorum
+git clone https://github.com/vjuliaife/PayQuorum
+cd PayQuorum
 npm install
 
 # 2. Start development server
